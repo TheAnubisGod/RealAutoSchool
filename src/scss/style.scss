@@ -531,17 +531,42 @@ button {
   min-height: 600px;
 
   @media (max-width: 768px) {
-    min-height: 500px;
+    min-height: 400px;
   }
   @media (max-width: 576px) {
-    background-position-x: -350px;
+    min-height: 300px;
+    background-position-x: -220px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 20px;
+  }
+
+  .super-header-1 {
+    @media (max-width: 480px) {
+      font-size: 25px;
+    }
+    @media (max-width: 380px) {
+      font-size: 20px;
+    }
+  }
+
+  .super-header-2 {
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
+    @media (max-width: 380px) {
+      font-size: 25px;
+    }
   }
 
   .wrap {
     position: relative;
     height: 600px;
     @media (max-width: 768px) {
-      height: 500px;
+      height: 400px;
+    }
+    @media (max-width: 576px) {
+      height: 300px;
     }
   }
 
@@ -558,12 +583,20 @@ button {
       font-size: 30px;
     }
     @media (max-width: 768px) {
-      font-size: 30px;
-      border-radius: 20px;
-      padding: 5px 10px;
+      font-size: 24px;
     }
     @media (max-width: 576px) {
       font-size: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 20px;
+      width: 150px;
+      text-align: center;
+      padding: 4px;
+    }
+    @media (max-width: 380px) {
+      font-size: 15px;
+      width: 120px;
     }
   }
 
@@ -581,13 +614,17 @@ button {
       bottom: -50px;
     }
     @media (max-width: 768px) {
-      bottom: -40px;
+      bottom: -170px;
     }
 
     @media (max-width: 576px) {
       padding: 10px;
       right: 50%;
       transform: translateX(50%);
+    }
+
+    @media (max-width: 480px) {
+      width: 300px;
     }
 
     .price {
@@ -598,11 +635,18 @@ button {
       @media (max-width: 576px) {
         font-size: 40px;
       }
+      @media (max-width: 480px) {
+        font-size: 30px;
+      }
     }
 
     .subscription {
       font-weight: 900;
       padding-bottom: 20px;
+      @media (max-width: 480px) {
+        padding-bottom: 5px;
+        font-size: 16px;
+      }
     }
 
     form {
@@ -610,6 +654,21 @@ button {
       padding-bottom: 20px;
       @media (max-width: 992px) {
         padding-bottom: 0;
+      }
+
+      .group {
+        margin-bottom: 15px;
+      }
+
+      input {
+        @media (max-width: 480px) {
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+
+      button {
+        font-size: 16px;
       }
     }
   }
@@ -620,12 +679,20 @@ button {
   padding-top: 120px;
   padding-bottom: 60px;
 
-  .description {
-    padding-top: 20px;
+  @media (max-width: 768px) {
+    padding-top: 200px;
   }
 
+  .description {
+    padding-top: 20px;
+    @media (max-width: 576px) {
+      font-size: 17px;
+    }
+  }
+
+
   .splide {
-    li {
+    .splide__slide {
       padding: 30px;
       padding-top: 50px;
       display: flex;
@@ -660,6 +727,9 @@ button {
     @media (max-width: 480px) {
       padding: 10px;
       font-size: 20px;
+    }
+    @media (max-width: 380px) {
+      font-size: 17px;
     }
 
     &:hover {
@@ -775,6 +845,12 @@ button {
     padding-bottom: 60px;
   }
 
+  #instructor-slider {
+    @media (max-width: 480px) {
+      margin-bottom: 10px;
+    }
+  }
+
   .lister {
     height: auto;
     @media (max-width: 992px) {
@@ -813,6 +889,11 @@ button {
     p {
       text-align: right;
       padding: 10px 0;
+      @media (max-width: 576px) {
+        font-size: 17px;
+        padding: 5px 0;
+        margin-bottom: 5px;
+      }
     }
   }
 }
@@ -896,8 +977,8 @@ button {
     @media (max-width: 992px) {
       width: 440px;
     }
-    @media (max-width: 480px) {
-      width: 310px;
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
@@ -1146,10 +1227,16 @@ button {
     .subscription {
       text-align: right;
       padding-top: 20px;
+      @media (max-width: 576px) {
+        font-size: 17px;
+      }
 
       span {
         font-weight: 900;
         font-size: 25px;
+        @media (max-width: 576px) {
+          font-size: 20px;
+        }
       }
 
     }
@@ -1226,7 +1313,7 @@ button {
     }
   }
 
-  button{
+  button {
     @media (max-width: 576px) {
       width: 100%;
     }
@@ -1295,6 +1382,7 @@ button {
     text-align: right;
     @media (max-width: 576px) {
       text-align: center;
+      font-size: 17px;
     }
   }
 
@@ -1345,6 +1433,9 @@ button {
   p {
     @media (max-width: 768px) {
       font-size: 18px;
+    }
+    @media (max-width: 576px) {
+      font-size: 17px;
     }
   }
 

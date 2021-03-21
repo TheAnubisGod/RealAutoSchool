@@ -451,12 +451,38 @@ button {
 }
 @media (max-width: 768px) {
   .motoculture {
-    min-height: 500px;
+    min-height: 400px;
   }
 }
 @media (max-width: 576px) {
   .motoculture {
-    background-position-x: -350px;
+    min-height: 300px;
+    background-position-x: -220px;
+  }
+}
+@media (max-width: 480px) {
+  .motoculture {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .motoculture .super-header-1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 380px) {
+  .motoculture .super-header-1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .motoculture .super-header-2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .motoculture .super-header-2 {
+    font-size: 25px;
   }
 }
 .motoculture .wrap {
@@ -465,7 +491,12 @@ button {
 }
 @media (max-width: 768px) {
   .motoculture .wrap {
-    height: 500px;
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .motoculture .wrap {
+    height: 300px;
   }
 }
 .motoculture .insert {
@@ -485,14 +516,26 @@ button {
 }
 @media (max-width: 768px) {
   .motoculture .insert {
-    font-size: 30px;
-    border-radius: 20px;
-    padding: 5px 10px;
+    font-size: 24px;
   }
 }
 @media (max-width: 576px) {
   .motoculture .insert {
     font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .motoculture .insert {
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 4px;
+  }
+}
+@media (max-width: 380px) {
+  .motoculture .insert {
+    font-size: 15px;
+    width: 120px;
   }
 }
 .motoculture .offer {
@@ -513,7 +556,7 @@ button {
 }
 @media (max-width: 768px) {
   .motoculture .offer {
-    bottom: -40px;
+    bottom: -170px;
   }
 }
 @media (max-width: 576px) {
@@ -521,6 +564,11 @@ button {
     padding: 10px;
     right: 50%;
     transform: translateX(50%);
+  }
+}
+@media (max-width: 480px) {
+  .motoculture .offer {
+    width: 300px;
   }
 }
 .motoculture .offer .price {
@@ -536,9 +584,20 @@ button {
     font-size: 40px;
   }
 }
+@media (max-width: 480px) {
+  .motoculture .offer .price {
+    font-size: 30px;
+  }
+}
 .motoculture .offer .subscription {
   font-weight: 900;
   padding-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .motoculture .offer .subscription {
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
 }
 .motoculture .offer form {
   padding-top: 10px;
@@ -549,15 +608,37 @@ button {
     padding-bottom: 0;
   }
 }
+.motoculture .offer form .group {
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  .motoculture .offer form input {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+.motoculture .offer form button {
+  font-size: 16px;
+}
 
 .prices {
   padding-top: 120px;
   padding-bottom: 60px;
 }
+@media (max-width: 768px) {
+  .prices {
+    padding-top: 200px;
+  }
+}
 .prices .description {
   padding-top: 20px;
 }
-.prices .splide li {
+@media (max-width: 576px) {
+  .prices .description {
+    font-size: 17px;
+  }
+}
+.prices .splide .splide__slide {
   padding: 30px;
   padding-top: 50px;
   display: flex;
@@ -597,6 +678,11 @@ button {
   .prices .price-block {
     padding: 10px;
     font-size: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .prices .price-block {
+    font-size: 17px;
   }
 }
 .prices .price-block:hover .naming {
@@ -718,6 +804,11 @@ button {
     padding-bottom: 60px;
   }
 }
+@media (max-width: 480px) {
+  .instructor #instructor-slider {
+    margin-bottom: 10px;
+  }
+}
 .instructor .lister {
   height: auto;
 }
@@ -755,6 +846,13 @@ button {
 .instructor .content p {
   text-align: right;
   padding: 10px 0;
+}
+@media (max-width: 576px) {
+  .instructor .content p {
+    font-size: 17px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+  }
 }
 
 .instructor-modal {
@@ -841,9 +939,9 @@ button {
     width: 440px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .we-are-waiting-you .biker {
-    width: 310px;
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -1121,9 +1219,19 @@ button {
   text-align: right;
   padding-top: 20px;
 }
+@media (max-width: 576px) {
+  .lessons .content .subscription {
+    font-size: 17px;
+  }
+}
 .lessons .content .subscription span {
   font-weight: 900;
   font-size: 25px;
+}
+@media (max-width: 576px) {
+  .lessons .content .subscription span {
+    font-size: 20px;
+  }
 }
 .lessons .content .header {
   text-align: right;
@@ -1277,6 +1385,7 @@ button {
 @media (max-width: 576px) {
   .tech .subscription {
     text-align: center;
+    font-size: 17px;
   }
 }
 .tech .slider {
@@ -1330,6 +1439,11 @@ button {
 @media (max-width: 768px) {
   .seo p {
     font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .seo p {
+    font-size: 17px;
   }
 }
 .seo .lister-grid {

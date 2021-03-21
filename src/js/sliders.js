@@ -59,6 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
             992: {
                 pagination: true
+            },
+            768: {
+                height: 300,
+                pagination: true
+            },
+            480: {
+                height: 250,
+                pagination: true
             }
         },
         classes: {
