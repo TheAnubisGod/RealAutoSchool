@@ -447,6 +447,12 @@ button {
 
 .splide__pagination {
   bottom: -25px;
+  @media (max-width: 567px) {
+    bottom: -15px;
+  }
+  @media (max-width: 480px) {
+    bottom: -20px;
+  }
 }
 
 .splide__pagination__page {
@@ -460,8 +466,8 @@ button {
     width: 10px;
   }
   @media (max-width: 480px) {
-    height: 6px;
-    width: 6px;
+    height: 8px;
+    width: 8px;
   }
 
   &.is-active {
@@ -618,6 +624,7 @@ button {
     }
 
     @media (max-width: 576px) {
+      bottom: -120px;
       padding: 10px;
       right: 50%;
       transform: translateX(50%);
@@ -692,11 +699,12 @@ button {
 
 
   .splide {
+    padding: 0 20px;
+
     .splide__slide {
-      padding: 30px;
-      padding-top: 50px;
-      display: flex;
-      justify-content: center;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+      margin-top: 60px;
+      margin-bottom: 30px;
     }
 
     .splide__arrows {
@@ -708,10 +716,10 @@ button {
 
   .price-block {
     position: relative;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     display: inline-block;
     padding: 20px;
+    width: 100%;
     @media (max-width: 1200px) {
       padding: 10px;
       font-size: 18px;
@@ -835,6 +843,10 @@ button {
 
 }
 
+@function auto-hight() {
+  @return calc(76vw - 22px)
+}
+
 // Instructor
 .instructor {
   padding-top: 60px;
@@ -845,11 +857,11 @@ button {
     padding-bottom: 60px;
   }
 
-  #instructor-slider {
-    @media (max-width: 480px) {
-      margin-bottom: 10px;
-    }
-  }
+  //#instructor-slider {
+  //  @media (max-width: 480px) {
+  //    margin-bottom: 10px;
+  //  }
+  //}
 
   .lister {
     height: auto;
@@ -858,24 +870,109 @@ button {
     }
   }
 
-
   .slider {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     @media (max-width: 992px) {
       order: 2;
+      width: 100%;
+      flex-direction: row;
+    }
+    @media (max-width: 576px) {
+      flex-direction: column;
     }
 
-    .frame {
-      @media (max-width: 480px) {
-        width: 280px;
+    .instructors {
+      padding-bottom: 10px;
+      @media (max-width: 992px) {
+        padding-bottom: 0;
+      }
+      @media (max-width: 576px) {
+        padding-bottom: 10px;
+      }
+    }
 
-        .desc {
-          font-size: 18px;
-          border-bottom-left-radius: 13px;
-          border-bottom-right-radius: 13px;
+    .instructor-entity {
+      opacity: 0;
+      display: none;
+      transition: opacity 0.3s linear;
+      height: 380px;
+      width: 500px;
+      @media (max-width: 992px) {
+        width: 580px;
+        height: 440px;
+      }
+      @media (max-width: 768px) {
+        width: 420px;
+        height: 305px;
+      }
+      @media (max-width: 576px) {
+        flex-direction: row;
+        width: 100%;
+        height: auto-hight();
+      }
+
+      &.instructor-active {
+        opacity: 1;
+        display: block;
+      }
+    }
+
+    .thumbs {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
+      @media (max-width: 576px) {
+        flex-direction: row;
+      }
+
+
+      .thumb {
+        opacity: .7;
+        cursor: pointer;
+        transition: opacity 0.3s linear;
+        @media (max-width: 768px) {
+          width: 90px;
+          height: 67px;
+        }
+        @media (max-width: 480px) {
+          width: 70px;
+          height: 52px;
+        }
+
+        &-active {
+          opacity: 1;
+        }
+
+        &:hover {
+          opacity: 1;
         }
       }
     }
   }
+
+  //.slider {
+  //  @media (max-width: 992px) {
+  //    order: 2;
+  //  }
+  //  @media (max-width: 480px) {
+  //    width: 100%;
+  //  }
+  //
+  //  .frame {
+  //    @media (max-width: 480px) {
+  //
+  //      .desc {
+  //        font-size: 18px;
+  //        border-bottom-left-radius: 13px;
+  //        border-bottom-right-radius: 13px;
+  //      }
+  //    }
+  //  }
+  //}
 
   .content {
     color: $white;
@@ -925,9 +1022,9 @@ button {
     transform: translateY(-50%) translateX(-50%);
     font-size: 16px;
     @media (max-width: 576px) {
-      padding: 10px;
+      padding: 20px 10px;
       width: 95%;
-      font-size: 12px;
+      font-size: 17px;
     }
 
     .image-block {

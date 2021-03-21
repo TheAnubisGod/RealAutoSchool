@@ -372,6 +372,16 @@ button {
 .splide__pagination {
   bottom: -25px;
 }
+@media (max-width: 567px) {
+  .splide__pagination {
+    bottom: -15px;
+  }
+}
+@media (max-width: 480px) {
+  .splide__pagination {
+    bottom: -20px;
+  }
+}
 
 .splide__pagination__page {
   background: transparent url("../img/slider/pagination.svg") center center;
@@ -387,8 +397,8 @@ button {
 }
 @media (max-width: 480px) {
   .splide__pagination__page {
-    height: 6px;
-    width: 6px;
+    height: 8px;
+    width: 8px;
   }
 }
 .splide__pagination__page.is-active {
@@ -561,6 +571,7 @@ button {
 }
 @media (max-width: 576px) {
   .motoculture .offer {
+    bottom: -120px;
     padding: 10px;
     right: 50%;
     transform: translateX(50%);
@@ -638,11 +649,13 @@ button {
     font-size: 17px;
   }
 }
+.prices .splide {
+  padding: 0 20px;
+}
 .prices .splide .splide__slide {
-  padding: 30px;
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .prices .splide .splide__arrows {
@@ -651,10 +664,10 @@ button {
 }
 .prices .price-block {
   position: relative;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   display: inline-block;
   padding: 20px;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .prices .price-block {
@@ -804,11 +817,6 @@ button {
     padding-bottom: 60px;
   }
 }
-@media (max-width: 480px) {
-  .instructor #instructor-slider {
-    margin-bottom: 10px;
-  }
-}
 .instructor .lister {
   height: auto;
 }
@@ -817,20 +825,102 @@ button {
     flex-direction: column;
   }
 }
+.instructor .slider {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 992px) {
   .instructor .slider {
     order: 2;
+    width: 100%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 576px) {
+  .instructor .slider {
+    flex-direction: column;
+  }
+}
+.instructor .slider .instructors {
+  padding-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .instructor .slider .instructors {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .instructor .slider .instructors {
+    padding-bottom: 10px;
+  }
+}
+.instructor .slider .instructor-entity {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s linear;
+  height: 380px;
+  width: 500px;
+}
+@media (max-width: 992px) {
+  .instructor .slider .instructor-entity {
+    width: 580px;
+    height: 440px;
+  }
+}
+@media (max-width: 768px) {
+  .instructor .slider .instructor-entity {
+    width: 420px;
+    height: 305px;
+  }
+}
+@media (max-width: 576px) {
+  .instructor .slider .instructor-entity {
+    flex-direction: row;
+    width: 100%;
+    height: calc(76vw - 22px);
+  }
+}
+.instructor .slider .instructor-entity.instructor-active {
+  opacity: 1;
+  display: block;
+}
+.instructor .slider .thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .instructor .slider .thumbs {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .instructor .slider .thumbs {
+    flex-direction: row;
+  }
+}
+.instructor .slider .thumbs .thumb {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+@media (max-width: 768px) {
+  .instructor .slider .thumbs .thumb {
+    width: 90px;
+    height: 67px;
   }
 }
 @media (max-width: 480px) {
-  .instructor .slider .frame {
-    width: 280px;
+  .instructor .slider .thumbs .thumb {
+    width: 70px;
+    height: 52px;
   }
-  .instructor .slider .frame .desc {
-    font-size: 18px;
-    border-bottom-left-radius: 13px;
-    border-bottom-right-radius: 13px;
-  }
+}
+.instructor .slider .thumbs .thumb-active {
+  opacity: 1;
+}
+.instructor .slider .thumbs .thumb:hover {
+  opacity: 1;
 }
 .instructor .content {
   color: #FFFFFF;
@@ -884,9 +974,9 @@ button {
 }
 @media (max-width: 576px) {
   .instructor-modal-content {
-    padding: 10px;
+    padding: 20px 10px;
     width: 95%;
-    font-size: 12px;
+    font-size: 17px;
   }
 }
 .instructor-modal-content .image-block {

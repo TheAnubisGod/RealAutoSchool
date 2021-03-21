@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#price-slider', {
         perPage: 3,
-        gap: 0,
+        gap: 30,
         pagination: false,
         breakpoints: {
             992: {
@@ -16,39 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }).mount();
 
-    var secondarySlider = new Splide('#instructor-thumb-slider', {
-        fixedWidth: 100,
-        height: 60,
-        gap: 10,
-        cover: true,
-        isNavigation: true,
-        arrows: false,
-        focus: 'center',
-        pagination: false,
-        breakpoints: {
-            480: {
-                gap: 5,
-                fixedWidth: 66,
-                height: 40
-            }
-        },
-    }).mount();
-
-    var primarySlider = new Splide('#instructor-slider', {
-        type: 'fade',
-        heightRatio: 0.5,
-        pagination: false,
-        height: 360,
-        arrows: false,
-        cover: true,
-        breakpoints: {
-            480: {
-                height: "auto"
-            }
-        }
-    }); // do not call mount() here.
-
-    primarySlider.sync(secondarySlider).mount();
+    current_instructor = 0
+    let instructor_entities = document.querySelectorAll(".instructor-entity");
+    let thumbs = document.querySelectorAll(".thumb")
+    for (let i = 0; i < thumbs.length; i++) {
+        thumbs[i].addEventListener("click", function (e) {
+            thumbs[current_instructor].classList.remove("thumb-active")
+            instructor_entities[current_instructor].classList.remove("instructor-active")
+            thumbs[i].classList.add("thumb-active")
+            instructor_entities[i].classList.add("instructor-active")
+            current_instructor = i
+        })
+    }
 
     new Splide('#lessons-slider', {
         cover: true,

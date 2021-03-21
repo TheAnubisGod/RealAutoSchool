@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function openModal(instructor_id) {
+        console.log(instructor_id)
         if (!modal_activated) {
             document.getElementById("instructor-name").innerText = instructors[instructor_id].name
             document.getElementById("instructor-desc").innerText = instructors[instructor_id].description
