@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#price-slider', {
         perPage: 3,
-        gap: 30,
+        gap: 0,
         pagination: false,
         breakpoints: {
             992: {
