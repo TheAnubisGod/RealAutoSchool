@@ -245,8 +245,8 @@ section {
 
 //endregion
 
-//region Buttons and inputs
-input:focus, a:focus, button:focus {
+//region Buttons and .inputs
+.input-1:focus, a:focus, button:focus {
   outline: none;
 }
 
@@ -255,7 +255,7 @@ input:focus, a:focus, button:focus {
   margin-bottom: 30px;
 }
 
-input {
+.input-1 {
   background: transparent;
   font-size: 16px;
   padding: 10px;
@@ -268,7 +268,7 @@ input {
   }
 }
 
-input:focus {
+.input-1:focus {
   outline: none;
 }
 
@@ -284,8 +284,8 @@ label {
   -webkit-transition: 0.2s ease all;
 }
 
-input:focus ~ label,
-input:valid ~ label {
+.input-1:focus ~ label,
+.input-1:valid ~ label {
   top: -15px;
   font-size: 14px;
   color: #5264AE;
@@ -320,8 +320,8 @@ input:valid ~ label {
   right: 50%;
 }
 
-input:focus ~ .bar:before,
-input:focus ~ .bar:after {
+.input-1:focus ~ .bar:before,
+.input-1:focus ~ .bar:after {
   width: 50%;
 }
 
@@ -667,7 +667,7 @@ button {
         margin-bottom: 15px;
       }
 
-      input {
+      .input-1 {
         @media (max-width: 480px) {
           width: 100%;
           font-size: 16px;
@@ -805,7 +805,7 @@ button {
       }
     }
 
-    .category {
+    .categ {
       font-weight: 900;
     }
 
@@ -846,7 +846,7 @@ button {
       }
     }
 
-    .price {
+    .price-1 {
       font-size: 30px;
       font-weight: 900;
       padding-top: 10px;
@@ -942,7 +942,7 @@ button {
       flex-direction: column;
     }
 
-    .instructors {
+    .instructors-sl {
       padding-bottom: 10px;
       @media (max-width: 992px) {
         padding-bottom: 0;
@@ -1203,7 +1203,7 @@ button {
       }
     }
 
-    input {
+    .input-1 {
       width: 400px;
       @media (max-width: 992px) {
         width: 280px;
@@ -1671,7 +1671,7 @@ button {
     padding-bottom: 10px;
   }
 
-  input {
+  .input-1 {
     color: $white;
     justify-self: start;
     font-size: 25px;
