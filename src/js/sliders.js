@@ -3,12 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 3,
         gap: 0,
         pagination: false,
+        autoplay: true,
         breakpoints: {
             992: {
                 perPage: 2,
                 arrows: false,
             },
             768: {
+                autoplay: false,
                 perPage: 1,
                 arrows: false,
                 pagination: true,
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             992: {
                 pagination: true
             },
-            768: {
+            767: {
                 height: 300,
                 pagination: true
             },
@@ -56,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new Splide('#tech-slider', {
         perPage: 4,
+        autoplay: true,
         gap: 20,
         pagination: false,
         breakpoints: {
@@ -66,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 perPage: 2,
                 arrows: false,
                 pagination: true,
+                autoplay: false,
             },
             480: {
                 perPage: 1,
@@ -79,11 +83,13 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 4,
         gap: 20,
         pagination: false,
+        autoplay: true,
         breakpoints: {
             992: {
                 perPage: 2,
             },
             768: {
+                autoplay: false,
                 perPage: 2,
                 arrows: false,
                 pagination: true,

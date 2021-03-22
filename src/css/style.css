@@ -379,7 +379,7 @@ button {
 }
 @media (max-width: 480px) {
   .splide__pagination {
-    bottom: -20px;
+    bottom: -22px;
   }
 }
 
@@ -641,6 +641,11 @@ button {
     padding-top: 200px;
   }
 }
+@media (max-width: 567px) {
+  .prices {
+    padding-top: 170px;
+  }
+}
 .prices .description {
   padding-top: 20px;
 }
@@ -811,6 +816,11 @@ button {
     font-size: 40px;
   }
 }
+@media (max-width: 576px) {
+  .prices .price-block .naming {
+    font-size: 45px;
+  }
+}
 
 .instructor {
   padding-top: 60px;
@@ -821,6 +831,11 @@ button {
 @media (max-width: 992px) {
   .instructor {
     padding-bottom: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .instructor {
+    padding-top: 30px;
   }
 }
 .instructor .lister {
@@ -874,7 +889,7 @@ button {
     height: 440px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .instructor .slider .instructor-entity {
     width: 420px;
     height: 305px;
@@ -906,11 +921,11 @@ button {
   }
 }
 .instructor .slider .thumbs .thumb {
-  opacity: 0.7;
+  opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.3s linear;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .instructor .slider .thumbs .thumb {
     width: 90px;
     height: 67px;
@@ -937,6 +952,16 @@ button {
   .instructor .content {
     order: 1;
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .instructor .content .header {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .instructor .content .header {
+    padding-bottom: 20px;
   }
 }
 .instructor .content p {
@@ -1008,10 +1033,16 @@ button {
   position: relative;
   padding-bottom: 60px;
 }
+@media (max-width: 480px) {
+  .we-are-waiting-you {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
 .we-are-waiting-you .rect {
   position: absolute;
   bottom: 10px;
-  right: 25%;
+  right: 20%;
   width: 500px;
   z-index: 1;
 }
@@ -1173,6 +1204,12 @@ button {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+@media (max-width: 480px) {
+  .advantages .header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
 .advantages .line {
   height: 110px;
   width: 2px;
@@ -1230,6 +1267,12 @@ button {
 .lessons {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media (max-width: 480px) {
+  .lessons {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
 @media (max-width: 1200px) {
   .lessons .lister {
@@ -1346,6 +1389,7 @@ button {
   background: url("../img/location/bg-geo.png") center center no-repeat;
   background-size: cover;
   min-height: 600px;
+  padding-bottom: 40px;
   color: #FFFFFF;
 }
 @media (max-width: 992px) {
@@ -1364,12 +1408,19 @@ button {
   .location {
     background-position-x: left;
     text-align: center;
+    min-height: auto;
   }
 }
 .location .header {
   color: #FFFFFF;
   padding-top: 60px;
   padding-bottom: 40px;
+}
+@media (max-width: 480px) {
+  .location .header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 }
 .location .list {
   padding-top: 40px;
@@ -1462,6 +1513,11 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (max-width: 480px) {
+  .tech {
+    padding-top: 20px;
+  }
+}
 @media (max-width: 768px) {
   .tech .splide__arrows {
     display: none;
@@ -1532,6 +1588,12 @@ button {
   color: #FFFFFF;
   min-height: 600px;
 }
+@media (max-width: 480px) {
+  .seo {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 768px) {
   .seo p {
     font-size: 18px;
@@ -1558,6 +1620,9 @@ button {
     display: block;
     padding-bottom: 40px;
   }
+}
+.seo .header {
+  padding-bottom: 10px;
 }
 .seo input {
   color: #FFFFFF;
@@ -1593,6 +1658,12 @@ button {
     padding-top: 30px;
   }
 }
+@media (max-width: 480px) {
+  .about-us {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}
 @media (max-width: 576px) {
   .about-us .frame .desc {
     border-bottom-left-radius: calc(6.9vw - 2px);
@@ -1605,13 +1676,13 @@ button {
 .about-us .header {
   text-align: right;
 }
-@media (max-width: 576px) {
-  .about-us .header {
-    text-align: center;
-  }
-}
 .about-us .slider {
   padding-top: 40px;
+}
+@media (max-width: 480px) {
+  .about-us .slider {
+    padding-top: 20px;
+  }
 }
 @media (max-width: 768px) {
   .about-us .slider .splide__arrows {

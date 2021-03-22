@@ -451,7 +451,7 @@ button {
     bottom: -15px;
   }
   @media (max-width: 480px) {
-    bottom: -20px;
+    bottom: -22px;
   }
 }
 
@@ -689,6 +689,9 @@ button {
   @media (max-width: 768px) {
     padding-top: 200px;
   }
+  @media (max-width: 567px) {
+    padding-top: 170px;
+  }
 
   .description {
     padding-top: 20px;
@@ -842,6 +845,9 @@ button {
       @media (max-width: 768px) {
         font-size: 40px;
       }
+      @media (max-width: 576px) {
+        font-size: 45px;
+      }
     }
   }
 
@@ -859,6 +865,9 @@ button {
   min-height: 600px;
   @media (max-width: 992px) {
     padding-bottom: 60px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 30px;
   }
 
   //#instructor-slider {
@@ -907,7 +916,7 @@ button {
         width: 580px;
         height: 440px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         width: 420px;
         height: 305px;
       }
@@ -935,10 +944,10 @@ button {
 
 
       .thumb {
-        opacity: .7;
+        opacity: .5;
         cursor: pointer;
         transition: opacity 0.3s linear;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           width: 90px;
           height: 67px;
         }
@@ -985,6 +994,15 @@ button {
     @media (max-width: 992px) {
       order: 1;
       width: 100%;
+    }
+
+    .header {
+      @media (max-width: 768px) {
+        padding-bottom: 40px;
+      }
+      @media (max-width: 480px) {
+        padding-bottom: 20px;
+      }
     }
 
     p {
@@ -1056,11 +1074,15 @@ button {
   padding-top: 60px;
   position: relative;
   padding-bottom: 60px;
+  @media (max-width: 480px) {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 
   .rect {
     position: absolute;
     bottom: 10px;
-    right: 25%;
+    right: 20%;
     width: 500px;
     z-index: 1;
     @media (max-width: 1200px) {
@@ -1194,6 +1216,10 @@ button {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 40px;
+    @media (max-width: 480px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
   }
 
   .line {
@@ -1251,6 +1277,10 @@ button {
 .lessons {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (max-width: 480px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 
   .lister {
     @media (max-width: 1200px) {
@@ -1361,6 +1391,7 @@ button {
   background: url("../img/location/bg-geo.png") center center no-repeat;
   background-size: cover;
   min-height: 600px;
+  padding-bottom: 40px;
   color: $white;
   @media (max-width: 992px) {
     background-position-x: -550px;
@@ -1373,12 +1404,17 @@ button {
   @media (max-width: 576px) {
     background-position-x: left;
     text-align: center;
+    min-height: auto;
   }
 
   .header {
     color: $white;
     padding-top: 60px;
     padding-bottom: 40px;
+    @media (max-width: 480px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
   }
 
   .list {
@@ -1465,6 +1501,9 @@ button {
 .tech {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (max-width: 480px) {
+    padding-top: 20px;
+  }
 
   .splide__arrows {
     @media (max-width: 768px) {
@@ -1530,6 +1569,10 @@ button {
   background-size: cover;
   color: $white;
   min-height: 600px;
+  @media (max-width: 480px) {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 
   p {
     @media (max-width: 768px) {
@@ -1552,6 +1595,10 @@ button {
       display: block;
       padding-bottom: 40px;
     }
+  }
+
+  .header{
+    padding-bottom: 10px;
   }
 
   input {
@@ -1586,6 +1633,10 @@ button {
   @media (max-width: 576px) {
     padding-top: 30px;
   }
+  @media (max-width: 480px) {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
 
   .frame {
     .desc {
@@ -1602,13 +1653,13 @@ button {
 
   .header {
     text-align: right;
-    @media (max-width: 576px) {
-      text-align: center;
-    }
   }
 
   .slider {
     padding-top: 40px;
+    @media (max-width: 480px) {
+      padding-top: 20px;
+    }
 
     .splide__arrows {
       @media (max-width: 768px) {
