@@ -115,11 +115,31 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     form.addEventListener("click", function (e) {
-        closeForm()
+        if (e.target === form || e.target === document.querySelector(".close-form")) {
+            closeForm()
+        }
     })
 
     document.querySelector(".geo-btn").addEventListener("click", function (e) {
         e.preventDefault()
         window.open('https://yandex.ru/maps/20523/elektrostal/?from=api-maps&ll=38.516557%2C55.761604&mode=usermaps&origin=jsapi_2_1_78&um=constructor%3A0b22c640aafb792ed0bf16a7a22ecfe69157072454cdbcee857036feb4c0ff28&z=9');
     })
+
+    let tech_modal_active = false
+    document.querySelectorAll(".tech-img").forEach(function (el) {
+        el.addEventListener("click", function (e) {
+            if (!tech_modal_active) {
+                document.getElementById("tech-scaled").src = el.dataset.img
+                fadeIn(".tech-modal")
+                tech_modal_active = true
+            }
+        })
+
+    })
+
+    document.querySelector(".tech-modal").addEventListener("click", function (e) {
+        fadeOut(".tech-modal")
+        tech_modal_active = false
+    })
+
 })

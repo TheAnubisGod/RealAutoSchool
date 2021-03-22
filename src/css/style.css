@@ -657,6 +657,14 @@ button {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+.modal-form form .close-form {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent url("../img/basic/cancel.svg");
+  height: 30px;
+  width: 30px;
+}
 .modal-form form .header {
   text-align: center;
 }
@@ -1539,6 +1547,29 @@ button {
     display: block;
     width: 100%;
   }
+}
+
+.tech-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(48, 48, 48, 0.63), rgba(48, 48, 48, 0.63));
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0.01;
+}
+.tech-modal.visible {
+  visibility: visible;
+}
+.tech-modal img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .tech {

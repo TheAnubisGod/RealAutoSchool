@@ -693,11 +693,22 @@ button {
   visibility: hidden;
   opacity: 0.01;
 
+
   &.visible {
     visibility: visible;
   }
 
   form {
+
+    .close-form {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: transparent url("../img/basic/cancel.svg");
+      height: 30px;
+      width: 30px;
+    }
+
     .header {
       text-align: center;
     }
@@ -1533,6 +1544,30 @@ button {
 }
 
 // Tech
+.tech-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(48, 48, 48, 0.63), rgba(48, 48, 48, 0.63));
+  backdrop-filter: blur(18px);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0.01;
+
+  &.visible {
+    visibility: visible;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
 .tech {
   padding-top: 60px;
   padding-bottom: 60px;
