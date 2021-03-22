@@ -681,6 +681,41 @@ button {
   }
 }
 
+.modal-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(48, 48, 48, 0.63), rgba(48, 48, 48, 0.63));
+  backdrop-filter: blur(18px);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0.01;
+
+  &.visible {
+    visibility: visible;
+  }
+
+  form {
+    .header {
+      text-align: center;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    position: absolute;
+    background: $white;
+    padding: 20px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
 // Prices
 .prices {
   padding-top: 120px;
@@ -1597,7 +1632,7 @@ button {
     }
   }
 
-  .header{
+  .header {
     padding-bottom: 10px;
   }
 

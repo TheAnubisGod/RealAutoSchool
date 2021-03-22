@@ -58,24 +58,9 @@ let instructors = {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Instructor Modal
     let modal_activated = false
     let modal = document.querySelector(".instructor-modal")
-
-    function toggleModal(instructor_id) {
-        console.log(instructor_id)
-        if (!modal_activated) {
-            document.getElementById("instructor-name").innerText = instructors[instructor_id].name
-            document.getElementById("instructor-desc").innerText = instructors[instructor_id].description
-            document.getElementById("instructor-image").src = instructors[instructor_id].image
-            fadeIn(".instructor-modal")
-            modal_activated = true
-            document.body.style.overflow = "hidden"
-        } else {
-            fadeOut(".instructor-modal")
-            modal_activated = false
-            document.body.style.overflow = "auto"
-        }
-    }
 
     function openModal(instructor_id) {
         console.log(instructor_id)
@@ -105,4 +90,36 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    // Form
+    let form_activated = false
+    let form = document.querySelector(".modal-form")
+
+    function openForm() {
+        if (!form_activated) {
+            fadeIn(".modal-form")
+            form_activated = true
+            document.body.style.overflow = "hidden"
+        }
+    }
+
+    function closeForm() {
+        fadeOut(".modal-form")
+        form_activated = false
+        document.body.style.overflow = "auto"
+    }
+
+    let activators = document.querySelectorAll(".form-activate")
+    for (let i = 0; i < activators.length; i++) {
+        activators[i].addEventListener("click", function (e) {
+            openForm()
+        })
+    }
+    form.addEventListener("click", function (e) {
+        closeForm()
+    })
+
+    document.querySelector(".geo-btn").addEventListener("click", function (e) {
+        e.preventDefault()
+        window.open('https://yandex.ru/maps/20523/elektrostal/?from=api-maps&ll=38.516557%2C55.761604&mode=usermaps&origin=jsapi_2_1_78&um=constructor%3A0b22c640aafb792ed0bf16a7a22ecfe69157072454cdbcee857036feb4c0ff28&z=9');
+    })
 })
