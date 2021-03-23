@@ -93,9 +93,6 @@ $black: #303030;
 // ! Basics !
 // General
 body {
-  font-family: "Roboto";
-  color: $black;
-  font-size: 20px;
   position: relative;
 }
 
@@ -331,7 +328,7 @@ button {
 
 .orange-btn {
   background: $orange;
-  font-weight: 900;
+  font-weight: 700;
   height: 50px;
   width: 300px;
   border-radius: 10px;
@@ -363,7 +360,7 @@ button {
 
 .blue-btn {
   background: $blue;
-  font-weight: 900;
+  font-weight: 700;
   height: 50px;
   width: 300px;
   border-radius: 10px;
@@ -529,12 +526,16 @@ button {
 // ! Sections !
 // Motoculture
 .motoculture {
+  border-top: 3px $gray;
   padding-top: 40px;
   text-align: right;
   background: url("../img/motoculture/biker.png") center center no-repeat;
   background-size: cover;
   position: relative;
   min-height: 600px;
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
 
   @media (max-width: 768px) {
     min-height: 400px;
@@ -548,17 +549,20 @@ button {
   }
 
   .super-header-1 {
+    text-align: right;
     @media (max-width: 480px) {
-      font-size: 25px;
+      font-size: 25px !important;
     }
     @media (max-width: 380px) {
-      font-size: 20px;
+      font-size: 20px !important;
     }
   }
 
   .super-header-2 {
+    text-align: right;
     @media (max-width: 480px) {
       font-size: 30px;
+      text-align: right;
     }
     @media (max-width: 380px) {
       font-size: 25px;
@@ -620,7 +624,7 @@ button {
       bottom: -50px;
     }
     @media (max-width: 768px) {
-      bottom: -170px;
+      bottom: -100px;
     }
 
     @media (max-width: 576px) {
@@ -635,6 +639,7 @@ button {
     }
 
     .price {
+      margin-top: 0;
       font-size: 60px;
       @media (max-width: 992px) {
         font-size: 50px;
@@ -675,13 +680,17 @@ button {
       }
 
       button {
-        font-size: 16px;
+        font-size: 20px;
+        font-weight: 700;
       }
     }
   }
 }
 
 .modal-form {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -729,11 +738,14 @@ button {
 
 // Prices
 .prices {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   padding-top: 120px;
   padding-bottom: 60px;
 
   @media (max-width: 768px) {
-    padding-top: 200px;
+    padding-top: 150px;
   }
   @media (max-width: 567px) {
     padding-top: 170px;
@@ -869,7 +881,7 @@ button {
       border-bottom-right-radius: 10px;
       color: $white;
       font-size: 25px;
-      font-weight: normal;
+      font-weight: 700;
       transition: background-color 300ms linear;
       @media (max-width: 1200px) {
         font-size: 25px;
@@ -886,7 +898,7 @@ button {
       text-align: center;
       position: absolute;
       font-weight: 900;
-      top: -60px;
+      top: -50px;
       left: 0;
       transition: color 300ms linear;
       @media (max-width: 768px) {
@@ -906,6 +918,9 @@ button {
 
 // Instructor
 .instructor {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   padding-top: 60px;
   background: url("../img/instructor/bg-instructor.png") center center no-repeat;
   background-size: cover;
@@ -1065,6 +1080,9 @@ button {
 }
 
 .instructor-modal {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1075,7 +1093,6 @@ button {
   z-index: 3;
   visibility: hidden;
   opacity: 0.01;
-
 
 
   &.visible {
@@ -1098,7 +1115,7 @@ button {
       font-size: 17px;
     }
 
-    .close-inst-modal{
+    .close-inst-modal {
       position: absolute;
       top: 3px;
       right: 3px;
@@ -1129,6 +1146,9 @@ button {
 
 // We are waiting for you
 .we-are-waiting-you {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   padding-top: 60px;
   position: relative;
   padding-bottom: 60px;
@@ -1180,7 +1200,7 @@ button {
       width: 400px;
     }
     @media (max-width: 480px) {
-      width: 300px;
+      width: 100%;
     }
 
     .header {
@@ -1210,9 +1230,7 @@ button {
 
     button {
       width: 100%;
-      @media (max-width: 480px) {
-        width: 280px;
-      }
+      font-weight: 700;
     }
 
     .input-1 {
@@ -1224,7 +1242,7 @@ button {
         width: 400px;
       }
       @media (max-width: 480px) {
-        width: 280px;
+        width: 100%;
       }
     }
   }
@@ -1232,6 +1250,9 @@ button {
 
 // Advantages
 .advantages {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   background: url("../img/advantages/bg.png") center center no-repeat;
   background-size: cover;
   min-height: 450px;
@@ -1260,6 +1281,7 @@ button {
 
   button {
     margin-top: 40px;
+    font-weight: 700;
     grid-column-start: 2;
     @media (max-width: 768px) {
       width: 250px;
@@ -1333,6 +1355,9 @@ button {
 
 // Lessons
 .lessons {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
   @media (max-width: 480px) {
@@ -1412,6 +1437,13 @@ button {
     @media (max-width: 992px) {
       font-size: 20px;
     }
+    @media (max-width: 768px) {
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 480px) {
+      padding-top: 0;
+    }
 
     .subscription {
       text-align: right;
@@ -1446,20 +1478,25 @@ button {
 
 // Location
 .location {
+  font-family: "Roboto";
+  font-size: 20px;
   background: url("../img/location/bg-geo.png") center center no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 550px;
   padding-bottom: 40px;
   color: $white;
+  padding-top: 50px;
   @media (max-width: 992px) {
     background-position-x: -550px;
   }
   @media (max-width: 768px) {
+    padding-top: 70px;
     background-position-x: left;
     text-align: center;
     min-height: 500px;
   }
   @media (max-width: 576px) {
+    padding-top: 0;
     background-position-x: left;
     text-align: center;
     min-height: auto;
@@ -1469,6 +1506,10 @@ button {
     color: $white;
     padding-top: 60px;
     padding-bottom: 40px;
+    @media (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
     @media (max-width: 480px) {
       padding-top: 40px;
       padding-bottom: 20px;
@@ -1520,9 +1561,10 @@ button {
     padding-bottom: 20px;
 
     @media (max-width: 992px) {
-      width: 100%;
+      width: 500px;
     }
     @media (max-width: 768px) {
+      width: 100%;
       font-size: 18px;
     }
     @media (max-width: 576px) {
@@ -1557,6 +1599,9 @@ button {
 
 // Tech
 .tech-modal {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1581,6 +1626,9 @@ button {
 }
 
 .tech {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
   @media (max-width: 480px) {
@@ -1595,6 +1643,7 @@ button {
 
   .header {
     text-align: right;
+    padding-bottom: 20px;
     @media (max-width: 576px) {
       text-align: center;
     }
@@ -1610,6 +1659,9 @@ button {
 
   .slider {
     padding-top: 40px;
+    @media (max-width: 480px) {
+      padding-top: 20px;
+    }
   }
 
   .frame {
@@ -1645,6 +1697,8 @@ button {
 
 // SEO
 .seo {
+  font-family: "Roboto";
+  font-size: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: url("../img/seo/seo-bg.png") center center no-repeat;
@@ -1658,7 +1712,7 @@ button {
 
   p {
     @media (max-width: 768px) {
-      font-size: 18px;
+      font-size: 20px;
     }
     @media (max-width: 576px) {
       font-size: 17px;
@@ -1680,6 +1734,7 @@ button {
   }
 
   .header {
+    text-align: left;
     padding-bottom: 10px;
   }
 
@@ -1710,6 +1765,9 @@ button {
 
 // About us
 .about-us {
+  font-family: "Roboto";
+  color: $black;
+  font-size: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
   @media (max-width: 576px) {
