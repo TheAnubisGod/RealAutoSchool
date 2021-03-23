@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }).mount();
 
-    current_instructor = 0
+    let current_instructor = 0
     let instructor_entities = document.querySelectorAll(".instructor-entity");
     let thumbs = document.querySelectorAll(".thumb")
     for (let i = 0; i < thumbs.length; i++) {
